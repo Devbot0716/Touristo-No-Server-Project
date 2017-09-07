@@ -1,0 +1,29 @@
+<h1 style="color: white;text-shadow: 0 0 4px black, 0 0 3px black; text-align: center">Learn about your destination country</h1>
+
+
+<input class='searchCountry' type="text"  placeholder="Search Country" ng-model='filterCountries.name'>
+
+
+<div class='countryDiv' ng-show = 'filterCountries.name' ng-repeat = 'country in countries | filter: filterCountries'>
+  <span style='font-size: 45px'>{{country.name}}
+    <br>
+  (Native spelling: {{country.nativeName}})</span>
+  <br>
+  Flag: <img class = 'flags' ng-src='{{country.flag}}'>
+  <br>
+  <br>
+  <div style='font-size: 30px'>Official Language(s):
+  <p ng-repeat='language in country.languages'>{{language.name}}</p>
+
+  <p>Native Language Name:</p>
+  <p ng-repeat='language in country.languages'>{{language.nativeName}}</p>
+  Population: {{country.population}}
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <span class='magicText'>(Go to the <a href='#!/translate' style='color:cyan'>translate page</a> to see what the language looks like for your country!)</span>
+  <br>
+  <br>
+</div>

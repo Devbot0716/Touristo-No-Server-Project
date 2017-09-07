@@ -1,0 +1,58 @@
+<h1 style="text-align: center; font-family:Arial; color: white; text-shadow: 0 0 10px black, 0 0 6px black">What do you want to say?</h1>
+
+
+<div class="translateboxtitle">
+
+</div>
+<div class="translate-box">
+   <input title='translateBox'  placeholder='Enter your text here:' ng-model='filterTranslations'/>
+
+   <button class='ruButton' ng-click='translate(filterTranslations, "en-ru")'>Russian</button>
+
+   <button class='ukButton' ng-click='translate(filterTranslations,"en-uk")'>Ukrainian</button>
+
+   <button class='esButton' ng-click='translate(filterTranslations, "en-es")'>Spanish</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-pt")'>Portuguese</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-it")'>Italian</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-de")'>German</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-fr")'>French</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-zh")'>Chinese</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-ar")'>Arabic</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-ja")'>Japanese</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-ko")'>Korean</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-hu")'>Hungarian</button>
+
+   <button ng-click='translate(filterTranslations,
+   "en-el")'>Greek</button>
+
+   <!-- <button ng-click='translate(filterTranslations,"en-ga")'>Gaelic/Irish</button> -->
+
+   <button ng-click='translate(filterTranslations,"en-ro")'>Romanian</button>
+   <!-- <button ng-click='translate(filterTranslations, "en-ru")'>Translate</button> -->
+</div>
+
+<br>
+<br>
+
+  <div class="translationDiv" style='color: black' ng-repeat='translation in translations'>
+    <span class='outputBox'>{{translation}}</span>
+
+  </div>

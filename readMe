@@ -1,0 +1,11 @@
+This github link part of this project is basically a clone of http://translatr.varunmalhotra.xyz/?ref=producthunt. This is just being used for educational purposes to test my ability to code. Later on, the translatr app will be implemented into the site.
+
+Please use their website and support them.
+
+REST API used for the country filter:
+https://restcountries.eu/#api-endpoints-all
+
+Key for translator API:
+trnsl.1.1.20170529T152354Z.7be2fff7590b4355.b84cf3a8c0ccce417a577916a4af0b30b142dc44
+
+the translation API is one from Yandex.coms translator API
